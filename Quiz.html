@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Solver</h1>
+        <p>Type your values into a quiz and click Solve for answers.</p>
+    </header>
+
+    <main>
+        <div class="card" data-name="deliveryCharge">
+            <h2>deliveryCharge()</h2>
+            <p class="ask">If the order ammount is ₦50,000 or more, delivery is free regardless of distance. Otherwise, if the distance is 5 km or less, the delivery fee is ₦1,500. Otherwise, if the distance is greater than 5 km but less than or equal to 15 km, the delivery fee is ₦3,000. Otherwise, the delivery fee is ₦5,000.
+                Examples:
+                deliveryCharge(60 000, 20) -- 0
+                deliveryCharge(30 000, 5) -- 1500
+                deliveryCharge(20 000, 10) -- 3000
+                deliveryCharge(15 000, 16) -- 5000
+                deliveryCharge(50 000, 3) -- 0
+                deliveryCharge(30 000, 15) -- 3000
+            </p>
+            <div class="line"><label for="deliveryCharge-amount">Amount (₦)</label><input type="number" id="deliveryCharge-amount" placeholder="Enter amount"></div>
+            <div class="line"><label for="deliveryCharge-distance">Distance (km)</label><input type="number" id="deliveryCharge-distance" placeholder="Enter distance"></div>
+            <button onclick="solve_deliveryCharge()">Solve</button>
+            <div class="answer" id="deliveryCharge-answer"></div>
+        </div>
+    </main>
+
+</body>
+</html>
