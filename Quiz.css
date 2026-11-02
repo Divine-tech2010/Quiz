@@ -108,3 +108,13 @@ button{
 .yes{ color: green; }
 .no{ color: red; }
 .problem{ color: red; font-family: inherit; font-size: 14px;}
+
+@media (max-width: 900px){
+    .card{
+        max-width: 350px;
+        align-items: center;
+    }
+    .answer{
+        width: 320px;
+    }
+}
